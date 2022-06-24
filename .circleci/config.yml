@@ -141,11 +141,10 @@ workflows:
       - Hold [Performance-Testing]:
           type: approval
       - Performance-Testing:
-          context : org-global   
           requires:
             - Hold [Performance-Testing]
           filters:
             branches:
               only:
                 - develop
-                - performance
+                - Performance
