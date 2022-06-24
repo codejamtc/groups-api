@@ -32,7 +32,7 @@
         <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
       </SetupThreadGroup>
       <hashTree>
-        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Credentials data" enabled="false"/>
+        <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Credentials data" enabled="true"/>
         <hashTree>
           <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="JSON Credentials Data Set" enabled="true">
             <stringProp name="cacheKey">true</stringProp>
@@ -55,7 +55,7 @@ data.entrySet().each {
           </JSR223PostProcessor>
           <hashTree/>
         </hashTree>
-        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Credentials" enabled="true">
+        <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Credentials" enabled="false">
           <collectionProp name="Arguments.arguments">
             <elementProp name="adminusername" elementType="Argument">
               <stringProp name="Argument.name">adminusername</stringProp>
@@ -1119,7 +1119,7 @@ data.entrySet().each {
           <boolProp name="IfController.useExpression">true</boolProp>
         </IfController>
         <hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create group" enabled="true"/>
             <hashTree>
@@ -2365,7 +2365,7 @@ data.entrySet().each {
                   <collectionProp name="HeaderManager.headers">
                     <elementProp name="" elementType="Header">
                       <stringProp name="Header.name">Authorization</stringProp>
-                      <stringProp name="Header.value">Bearer ${__property(adminusertoken)}</stringProp>
+                      <stringProp name="Header.value">Bearer ${__property(normaluser_3_token)}</stringProp>
                     </elementProp>
                     <elementProp name="" elementType="Header">
                       <stringProp name="Header.name">content-type</stringProp>
@@ -2775,7 +2775,7 @@ data.entrySet().each {
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/v5/groups/${group5}</stringProp>
+                <stringProp name="HTTPSampler.path">/v5/groups/${group1}</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -2982,7 +2982,7 @@ data.entrySet().each {
                 <stringProp name="HTTPSampler.port"></stringProp>
                 <stringProp name="HTTPSampler.protocol">https</stringProp>
                 <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-                <stringProp name="HTTPSampler.path">/v5/groups/${group1}</stringProp>
+                <stringProp name="HTTPSampler.path">/v5/groups/${group_private}</stringProp>
                 <stringProp name="HTTPSampler.method">GET</stringProp>
                 <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
                 <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -5422,7 +5422,7 @@ data.entrySet().each {
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Roles" enabled="true"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Roles" enabled="false"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add Group Role" enabled="true"/>
             <hashTree>
