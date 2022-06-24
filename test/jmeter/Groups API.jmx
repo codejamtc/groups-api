@@ -3709,7 +3709,7 @@ data.entrySet().each {
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Membership" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Membership" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Get group members" enabled="true"/>
             <hashTree>
@@ -5148,7 +5148,7 @@ data.entrySet().each {
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Sub Groups" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Sub Groups" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Create sub group" enabled="true"/>
             <hashTree>
@@ -5422,7 +5422,7 @@ data.entrySet().each {
               </hashTree>
             </hashTree>
           </hashTree>
-          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Roles" enabled="false"/>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Group Roles" enabled="true"/>
           <hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname="Add Group Role" enabled="true"/>
             <hashTree>
