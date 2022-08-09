@@ -1,7 +1,0 @@
-[
-  {
-    "memberId": "{{USER_ID}}",
-    "membershipType": "user",
-    "httpCode": 200
-  }
-]
